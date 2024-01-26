@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingEnd="15dp"-->
+<!--                    android:background="@drawable/marquee_text_bg"-->
+<!--                    >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/notice"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:background="@color/main_color"-->
+<!--                        android:fontFamily="sans-serif"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:paddingTop="6dp"-->
+<!--                        android:paddingBottom="5dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/marqueeText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ellipsize="marquee"-->
+<!--                        android:marqueeRepeatLimit="marquee_forever"-->
+<!--                        android:scrollHorizontally="true"-->
+<!--                        android:fontFamily="@font/sutonnyomj"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text="@string/marqueeText"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:paddingStart="10dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="0"
+                    app:iss_placeholder="@drawable/placeholder_image"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/slider_bg"
+                    android:padding="5dp"
+                    app:iss_corner_radius="15"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Services -"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@color/main_color"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <!-- Top Services List -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/iqama_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/iqama_check"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Iqama Check"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fake_kafala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/fake_kafala"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kafala Check"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/driving_licence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/driving_licence"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Driving Licence"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contract_agreement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/contract_agreement"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contract Agreement"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/all_violation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/all_violation"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="All type Violation"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/khuroob_matloob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/khuroob_matloob"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Khuroob or Matloob"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/tourism_e_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/tourism_e_visa"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tourism E-Visa"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/visa_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/visa_status"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Visa Status Check"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/exit_entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/exit_entry"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Exit re Entry"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/red_green_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/red_green_status"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Red Green Status"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+                <!-- Other Services List -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Services -"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@color/main_color"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="25dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/medical_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/medical_visa"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medical New Visa"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iqama_profession_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/iqama_profession_test"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Iqama Profession"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/health_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/health_insurance"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Health Insurance"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/visa_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/visa_insurance"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Visa Insurance"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/extent_visa_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/extent_visa_insurance"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Extent Visa Insu."
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/qiwa_accept_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/qiwa_accept_req"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Qiwa Accept Reg"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riyal_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/riyal_price"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Riyal Price"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/more_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/lay_bg"
+                        android:layout_marginStart="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/more_apps"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="More Apps"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textAlignment="center"
+                            android:maxLines="1"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

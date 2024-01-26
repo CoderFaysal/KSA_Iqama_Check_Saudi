@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274680686410",
+    "project_id": "ksa-iqama-check---saudi",
+    "storage_bucket": "ksa-iqama-check---saudi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274680686410:android:62528295b029ba9bf843b3",
+        "android_client_info": {
+          "package_name": "com.coderfaysal.saudi_iqama_check"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274680686410-4nfl88vvfgh34ng2d4cf0f0ro2gjo0j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjL6go-qXZHp_jRU2ps-cHgK8PicG-BCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274680686410-4nfl88vvfgh34ng2d4cf0f0ro2gjo0j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

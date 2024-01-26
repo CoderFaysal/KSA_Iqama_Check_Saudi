@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    >
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.coderfaysal.saudi_iqama_check.HomeFragment"
+        android:label="Saudi Iqama Check"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.coderfaysal.saudi_iqama_check.VideoFragment"
+        android:label="ভিড়িও সমূহ"
+        tools:layout="@layout/fragment_video" />
+
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.coderfaysal.saudi_iqama_check.QuestionFragment"
+        android:label="প্রাভেসি পলিসি"
+        tools:layout="@layout/fragment_question" />
+
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.coderfaysal.saudi_iqama_check.InfoFragment"
+        android:label="অ্যাপ সম্পর্কে"
+        tools:layout="@layout/fragment_info" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/my_profile"-->
+<!--        android:name="com.coderfaysal.saudi_iqama_check.MyProfileFragment"-->
+<!--        android:label="আমার সম্পর্কে"-->
+<!--        tools:layout="@layout/fragment_my_profile" />-->
+
+
+</navigation>

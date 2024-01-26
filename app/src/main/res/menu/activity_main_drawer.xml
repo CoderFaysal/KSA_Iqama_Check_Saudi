@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single" android:id="@+id/first_group">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="হোম"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_video"
+            android:title="ভিড়িও সমূহ"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/nav_question"
+            android:icon="@drawable/ic_privacy"
+            android:title="প্রাভেসি পলিসি"
+            android:checkable="true"
+            />
+
+
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_app_info"
+            android:title="অ্যাপ সম্পর্কে"
+            android:checkable="true"
+            />
+
+    </group>
+
+<!--    <group android:checkableBehavior="single" android:menuCategory="secondary">-->
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/share"-->
+<!--            android:icon="@drawable/share"-->
+<!--            android:title="শেয়ার করুন"-->
+<!--            android:checkable="true"-->
+<!--            />-->
+
+<!--        <item-->
+<!--            android:id="@+id/more_app"-->
+<!--            android:icon="@drawable/city_list"-->
+<!--            android:title="অন্যান্য অ্যাপ"-->
+<!--            android:checkable="true"-->
+<!--            />-->
+
+<!--        <item-->
+<!--            android:id="@+id/rating"-->
+<!--            android:icon="@drawable/rating"-->
+<!--            android:title="রেটিং দিন"-->
+<!--            android:checkable="true"-->
+<!--            />-->
+
+<!--        <item-->
+<!--            android:id="@+id/my_profile"-->
+<!--            android:icon="@drawable/developer"-->
+<!--            android:title="আমার সম্পর্কে"-->
+<!--            android:checkable="true"-->
+<!--            />-->
+
+<!--        <item-->
+<!--            android:id="@+id/contact_me"-->
+<!--            android:icon="@drawable/contact_me"-->
+<!--            android:title="যোগাযোগ করুন"-->
+<!--            android:checkable="true"-->
+<!--            />-->
+
+<!--    </group>-->
+
+
+
+
+
+</menu>
